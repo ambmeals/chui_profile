@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Card from './Components/Card'
 
-function App() {
+function App() 
+{
+
+  const [name,setName] = useState('Your Name');
+  const [job,setJob] = useState('Your Name');
+  const [about,setAbout] = useState("About");
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Card name={'Chui'} job={'Professional Cuddler'} about={"20 lbs of fluffy pomchi goodness. Able to find any size chicken wang on the ground. Enjoys long walks off leash, peanut-butter bones, and a sunbathed nap. The mail lady cannot tell if he is a dog or a cat."}/>
+
+     
     </div>
+ 
+    
   );
 }
+
 
 export default App;
