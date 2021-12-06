@@ -19,6 +19,16 @@
     background: linear-gradient(to left, pink, purple);
 }
 
+.upper-container2{
+    height: 100px;
+    background: linear-gradient(to left, lightblue, darkblue);
+}
+
+.upper-container3{
+    height: 100px;
+    background: linear-gradient(to left, orange, red);
+}
+
 .image-container img{
     background: white;
     width: 100px;
